@@ -1,21 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EFLibrary.Model
+namespace RecognitionModel
 {
-    /// <summary>
-    /// 表情信息表
-    /// </summary>
-    [Table("eleven_faceinfo")]
-    public class FaceInfo
+    public class StudentFaceModel
     {
-        [Key]
-        public int ID { get; set; }
         /// <summary>
         /// 课程ID
         /// </summary>
@@ -31,6 +23,6 @@ namespace EFLibrary.Model
         /// <summary>
         /// 表情状态
         /// </summary>
-        public int FaceType { get; set; }
+        public FaceTypeEnum FaceType { get; set; }
     }
 }

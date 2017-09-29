@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,7 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FaceInfoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EFLibrary\EFLibrary.csproj">
+      <Project>{31224430-ebf9-4ff4-8fdb-9b389b4802bf}</Project>
+      <Name>EFLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReceRecognitionModel\RecognitionModel.csproj">
+      <Project>{a47f9db5-f2ef-4621-b8a4-0651d7e0eea0}</Project>
+      <Name>RecognitionModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
