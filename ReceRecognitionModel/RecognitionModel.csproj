@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,7 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\BasePageRequestData.cs" />
+    <Compile Include="Common\ExceptionQuery.cs" />
+    <Compile Include="Common\PageResponseData.cs" />
+    <Compile Include="Common\QueryHelper.cs" />
+    <Compile Include="Common\QueryResponse.cs" />
+    <Compile Include="Common\SoaDataPage.cs" />
     <Compile Include="FaceTypeEnum.cs" />
+    <Compile Include="ServerErrorEnum.cs" />
     <Compile Include="StudentFaceModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

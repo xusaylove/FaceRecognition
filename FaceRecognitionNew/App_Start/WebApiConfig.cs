@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Formatting;
 using System.Web.Http;
 
 namespace FaceRecognitionNew
@@ -19,6 +21,14 @@ namespace FaceRecognitionNew
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Formatters.XmlFormatter.SupportedMediaTypes.Clear();
+            JsonMediaTypeFormatter jsonFormatter = GlobalConfiguration.Configuration.Formatters.JsonFormatter;
+            var jSettings = new Newtonsoft.Json.JsonSerializerSettings()
+            {
+                Formatting = Formatting.Indented,
+                DateTimeZoneHandling = DateTimeZoneHandling.Utc
+            };
         }
     }
 }
