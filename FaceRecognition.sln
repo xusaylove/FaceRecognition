@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26906.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceRecognition", "FaceRecognition\FaceRecognition.csproj", "{1390306C-44D6-4ED1-8611-EED8A70AD822}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFLibrary", "EFLibrary\EFLibrary.csproj", "{31224430-EBF9-4FF4-8FDB-9B389B4802BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecognitionBLL", "RecognitionBLL\RecognitionBLL.csproj", "{4179DD8F-3F99-46BE-B9F8-471255361B4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1390306C-44D6-4ED1-8611-EED8A70AD822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1390306C-44D6-4ED1-8611-EED8A70AD822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1390306C-44D6-4ED1-8611-EED8A70AD822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1390306C-44D6-4ED1-8611-EED8A70AD822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31224430-EBF9-4FF4-8FDB-9B389B4802BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31224430-EBF9-4FF4-8FDB-9B389B4802BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31224430-EBF9-4FF4-8FDB-9B389B4802BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31224430-EBF9-4FF4-8FDB-9B389B4802BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4179DD8F-3F99-46BE-B9F8-471255361B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4179DD8F-3F99-46BE-B9F8-471255361B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4179DD8F-3F99-46BE-B9F8-471255361B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4179DD8F-3F99-46BE-B9F8-471255361B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03082347-DC48-4036-8297-327983587B7F}
+	EndGlobalSection
+EndGlobal
